@@ -35,7 +35,14 @@ class SqueakyClean {
                 output.deleteCharAt(i--);
             }
         }    
+
+        for(int i=0;i<output.length();i++){
+            char ch = output.charAt(i);
+            if(ch=='β'||ch=='ι'||ch=='ε'||ch=='γ'||ch=='τ'||ch=='ω'){
+                output.deleteCharAt(i--);
+            }
         
+        }  
         return output.toString();
-    }  
-}
+    }
+}      
