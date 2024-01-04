@@ -24,6 +24,6 @@ class AppointmentScheduler {
     }
     // informa a data do seu aniversário no ano corrente
     public LocalDate getAnniversaryDate() {
-        return LocalDate.of(1980, 9, 15).withYear(LocalDate.now().getYear());
+          return LocalDate.of(LocalDate.now().getYear(), 9, 15);
     }
 }
