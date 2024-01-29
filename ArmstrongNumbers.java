@@ -10,7 +10,7 @@ class ArmstrongNumbers {
         int qtd = countDigits(number);
         return number == String.valueOf(number)
             .codePoints() // ou chars()
-            .parallel()
+            .parallel() // usar mais de uma thread
             .map(i ->(int)Math.pow(Character.getNumericValue(i),qtd))
             .sum();
 
